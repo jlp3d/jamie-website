@@ -20,6 +20,19 @@
 
 html { scroll-behavior: smooth; }
 
+/* Scroll progress bar */
+#scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, var(--rose-gold-light), var(--rose-gold));
+  z-index: 200;
+  transition: width 0.1s ease-out;
+  pointer-events: none;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text-dark);
@@ -266,6 +279,7 @@ section {
   font-weight: 500;
   margin-bottom: 0.8rem;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .section-tag::before, .section-tag::after {
@@ -924,4 +938,20 @@ footer {
 
   .about-stats { grid-template-columns: 1fr; }
   .hero { padding: 7rem 1.5rem 3rem; }
+
+  .hero-tag {
+    font-size: 0.68rem;
+    padding: 0.35rem 0.9rem;
+    letter-spacing: 0.12em;
+  }
+
+  .section-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+  }
+
+  .section-tag::before,
+  .section-tag::after {
+    margin: 0 0.5rem;
+  }
 }
