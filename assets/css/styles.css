@@ -785,6 +785,22 @@ section {
   font-size: 0.85rem;
 }
 
+.dev-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rose-gold);
+  background: var(--blush-light);
+  border: 1px solid var(--blush-deep);
+  border-radius: 50px;
+  vertical-align: middle;
+  font-family: 'Inter', sans-serif;
+}
+
 /* Contact */
 .contact {
   background: linear-gradient(135deg, var(--blush) 0%, var(--blush-deep) 100%);
